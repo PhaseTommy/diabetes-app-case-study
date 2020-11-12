@@ -415,7 +415,7 @@ function App() {
                                 elegance and great communicative properties.
                             </MainTitle>
                             <BodyText>
-                                Typeface choice is usually a diifcult decision.
+                                Typeface choice is usually a dificult decision.
                                 In this instance it was important to have
                                 something that was visually appealing; but also
                                 very effective at communicating data. This is
@@ -531,6 +531,12 @@ function App() {
                 )}
                 {isDesktop && (
                     <>
+                        <LeftSide style={{ background: "#F8F7F7" }}>
+                            <img
+                                style={{ width: "70%", height: "auto" }}
+                                src={Colours}
+                            ></img>
+                        </LeftSide>
                         <RightSide style={{ background: "none" }}>
                             <div>
                                 <SmallTitle>006 // THE COLOURS</SmallTitle>
@@ -563,15 +569,6 @@ function App() {
                                     </BodyText>
                                 </div>
                             </div>
-                        </RightSide>
-                        <LeftSide style={{ background: "#F8F7F7" }}>
-                            <img
-                                style={{ width: "70%", height: "auto" }}
-                                src={Colours}
-                            ></img>
-                        </LeftSide>
-                        <RightSide style={{ background: "#21E88C" }}>
-                            <SS src={Stats}></SS>
                         </RightSide>
 
                         <LeftSide style={{ background: "none" }}>
@@ -617,6 +614,9 @@ function App() {
                                 </div>
                             </div>
                         </LeftSide>
+                        <RightSide style={{ background: "#21E88C" }}>
+                            <SS src={Stats}></SS>
+                        </RightSide>
                     </>
                 )}
             </ContentWrapper>
