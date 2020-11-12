@@ -36,7 +36,6 @@ const ContentWrapper = styled.div`
 const LeftSide = styled.div`
     width: auto;
     height: 100vh;
-    border-right: 1px solid #ddd9d9;
 
     padding-left: 10%;
     padding-right: 10%;
@@ -409,25 +408,29 @@ function App() {
 
                 <LeftSide>
                     <LeftSideHeroContent>
-                        <SmallTitle>005 // THE TYPEFACE</SmallTitle>
-                        <MainTitle>
-                            A bold but beautiful type choice that provides
-                            elegance and great communicative properties.
-                        </MainTitle>
-                        <BodyText>
-                            Typeface choice is usually a diifcult decision. In
-                            this instance it was important to have something
-                            that was visually appealing; but also very effective
-                            at communicating data. This is because when dealing
-                            with sensitive data it is imperative that it is
-                            easily legible and not easily confused. <br />
-                            <br />
-                            Amidst the visual overhaul it was important to have
-                            a typeface that showed off the modern visuals and
-                            accompany it accordingly. I also ensured that it was
-                            versatile at different weights and that light body
-                            text was still easily legible.
-                        </BodyText>
+                        <div style={{ maxWidth: "60ch" }}>
+                            <SmallTitle>005 // THE TYPEFACE</SmallTitle>
+                            <MainTitle>
+                                A bold but beautiful type choice that provides
+                                elegance and great communicative properties.
+                            </MainTitle>
+                            <BodyText>
+                                Typeface choice is usually a diifcult decision.
+                                In this instance it was important to have
+                                something that was visually appealing; but also
+                                very effective at communicating data. This is
+                                because when dealing with sensitive data it is
+                                imperative that it is easily legible and not
+                                easily confused. <br />
+                                <br />
+                                Amidst the visual overhaul it was important to
+                                have a typeface that showed off the modern
+                                visuals and accompany it accordingly. I also
+                                ensured that it was versatile at different
+                                weights and that light body text was still
+                                easily legible.
+                            </BodyText>
+                        </div>
                     </LeftSideHeroContent>
                 </LeftSide>
                 <RightSide>
