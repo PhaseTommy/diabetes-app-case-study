@@ -407,12 +407,6 @@ function App() {
                     <Tags>Final Year</Tags>
                 </Nav> */}
 
-                <RightSide>
-                    <img
-                        style={{ width: "70%", height: "auto" }}
-                        src={Typo}
-                    ></img>
-                </RightSide>
                 <LeftSide>
                     <LeftSideHeroContent>
                         <SmallTitle>005 // THE TYPEFACE</SmallTitle>
@@ -436,14 +430,14 @@ function App() {
                         </BodyText>
                     </LeftSideHeroContent>
                 </LeftSide>
+                <RightSide>
+                    <img
+                        style={{ width: "70%", height: "auto" }}
+                        src={Typo}
+                    ></img>
+                </RightSide>
                 {isTabletOrMobile && (
                     <>
-                        <LeftSide style={{ background: "#F8F7F7" }}>
-                            <img
-                                style={{ width: "70%", height: "auto" }}
-                                src={Colours}
-                            ></img>
-                        </LeftSide>
                         <RightSide style={{ background: "none" }}>
                             <div>
                                 <SmallTitle>006 // THE COLOURS</SmallTitle>
@@ -476,6 +470,59 @@ function App() {
                                     </BodyText>
                                 </div>
                             </div>
+                        </RightSide>
+                        <LeftSide style={{ background: "#F8F7F7" }}>
+                            <img
+                                style={{ width: "70%", height: "auto" }}
+                                src={Colours}
+                            ></img>
+                        </LeftSide>
+
+                        <LeftSide style={{ background: "none" }}>
+                            <div>
+                                <SmallTitle>
+                                    007 // THE FINAL SCREENS
+                                </SmallTitle>
+
+                                <div style={{ maxWidth: "60ch" }}>
+                                    <MainTitle>
+                                        A considered and effective response to a
+                                        shared issue amongst diabetics.
+                                    </MainTitle>
+                                    <BodyText>
+                                        Upon review, the aim was to provide a
+                                        modern approach to diabetes management,
+                                        fast, intuitive and responsive; in
+                                        response to the increased demands of
+                                        modern society. <br />
+                                        <br />
+                                        In this instance, I feel as though I was
+                                        able to provide an apt response to this
+                                        brief. The designs included a fully
+                                        prototyped{" "}
+                                        <FPS
+                                            style={{ display: "inline-block" }}
+                                        >
+                                            High FPS
+                                        </FPS>
+                                        output thatoffered access to examples
+                                        off how all the new introduced features
+                                        would work. <br />
+                                        <br />
+                                        Despite this, there were some concerns
+                                        with some of the UI elements being
+                                        poorly worded leading to bad UX,
+                                        something that I will definitely change
+                                        in a coming update. Below this I will
+                                        leave a timer behind to say when I have
+                                        refreshed the content on the site with
+                                        new information.
+                                    </BodyText>
+                                </div>
+                            </div>
+                        </LeftSide>
+                        <RightSide style={{ background: "#21E88C" }}>
+                            <SS src={Stats}></SS>
                         </RightSide>
                     </>
                 )}
@@ -520,49 +567,55 @@ function App() {
                                 src={Colours}
                             ></img>
                         </LeftSide>
+                        <RightSide style={{ background: "#21E88C" }}>
+                            <SS src={Stats}></SS>
+                        </RightSide>
+
+                        <LeftSide style={{ background: "none" }}>
+                            <div>
+                                <SmallTitle>
+                                    007 // THE FINAL SCREENS
+                                </SmallTitle>
+
+                                <div style={{ maxWidth: "60ch" }}>
+                                    <MainTitle>
+                                        A considered and effective response to a
+                                        shared issue amongst diabetics.
+                                    </MainTitle>
+                                    <BodyText>
+                                        Upon review, the aim was to provide a
+                                        modern approach to diabetes management,
+                                        fast, intuitive and responsive; in
+                                        response to the increased demands of
+                                        modern society. <br />
+                                        <br />
+                                        In this instance, I feel as though I was
+                                        able to provide an apt response to this
+                                        brief. The designs included a fully
+                                        prototyped{" "}
+                                        <FPS
+                                            style={{ display: "inline-block" }}
+                                        >
+                                            High FPS
+                                        </FPS>
+                                        output thatoffered access to examples
+                                        off how all the new introduced features
+                                        would work. <br />
+                                        <br />
+                                        Despite this, there were some concerns
+                                        with some of the UI elements being
+                                        poorly worded leading to bad UX,
+                                        something that I will definitely change
+                                        in a coming update. Below this I will
+                                        leave a timer behind to say when I have
+                                        refreshed the content on the site with
+                                        new information.
+                                    </BodyText>
+                                </div>
+                            </div>
+                        </LeftSide>
                     </>
                 )}
-
-                <RightSide style={{ background: "#21E88C" }}>
-                    <SS src={Stats}></SS>
-                </RightSide>
-
-                <LeftSide style={{ background: "none" }}>
-                    <div>
-                        <SmallTitle>007 // THE FINAL SCREENS</SmallTitle>
-
-                        <div style={{ maxWidth: "60ch" }}>
-                            <MainTitle>
-                                A considered and effective response to a shared
-                                issue amongst diabetics.
-                            </MainTitle>
-                            <BodyText>
-                                Upon review, the aim was to provide a modern
-                                approach to diabetes management, fast, intuitive
-                                and responsive; in response to the increased
-                                demands of modern society. <br />
-                                <br />
-                                In this instance, I feel as though I was able to
-                                provide an apt response to this brief. The
-                                designs included a fully prototyped{" "}
-                                <FPS style={{ display: "inline-block" }}>
-                                    High FPS
-                                </FPS>
-                                output thatoffered access to examples off how
-                                all the new introduced features would work.{" "}
-                                <br />
-                                <br />
-                                Despite this, there were some concerns with some
-                                of the UI elements being poorly worded leading
-                                to bad UX, something that I will definitely
-                                change in a coming update. Below this I will
-                                leave a timer behind to say when I have
-                                refreshed the content on the site with new
-                                information.
-                            </BodyText>
-                        </div>
-                    </div>
-                </LeftSide>
             </ContentWrapper>
         </div>
     );
