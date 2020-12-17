@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap");
+
 .App {
     width: 100%;
 }
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
     margin: 0;
     padding: 0;
 }
@@ -16,16 +19,3 @@ span {
     color: "#897fd3";
     font-weight: "700";
 }
-
-.iframe-wrapper {
-    width: 100%;
-    padding-top: 56.25%;
-    position: relative;
-    overflow: hidden;
-
-    z-index: 0;
-
-    border-radius: 8px;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap");

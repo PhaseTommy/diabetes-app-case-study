@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import styled from "styled-components";
 import HomeSS from "./assets/home-ss.png";
@@ -35,19 +34,23 @@ const ContentWrapper = styled.div`
 
 const LeftSide = styled.div`
     width: auto;
+    min-height: 840px;
     height: 100vh;
-
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 600px) {
+        min-height: 940px;
+        width: min(90vw, 55ch);
+    }
 `;
 const LeftSideHeroContent = styled.div``;
-const RightSideHeroContent = styled.div``;
 
 const RightSide = styled.div`
     width: auto;
+    min-height: 840px;
     height: 100vh;
     background: #897fd3;
 
@@ -56,6 +59,17 @@ const RightSide = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 600px) {
+        min-height: 940px;
+        width: min(90vw, 55ch);
+    }
+    :nth-child(even) {
+        @media (max-width: 600px) {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 `;
 
 const Tags = styled.span`
@@ -99,8 +113,10 @@ const SS = styled.img`
     :nth-child(2) {
         margin-left: 64px;
     }
+
     @media (max-width: 600px) {
-        width: 60%;
+        min-width: 100px;
+        width: 150px;
         border-radius: 40px;
     }
 `;
@@ -169,6 +185,16 @@ const FPS = styled.div`
     color: "#fffff" !important;
 `;
 
+const Hover = styled.div`
+    box-shadow: 0px 4px 218px rgba(0, 0, 0, 0.07),
+        0px 1.6711px 91.0752px rgba(0, 0, 0, 0.0503198),
+        0px 0.893452px 48.6932px rgba(0, 0, 0, 0.0417275),
+        0px 0.500862px 27.297px rgba(0, 0, 0, 0.035),
+        0px 0.266004px 14.4972px rgba(0, 0, 0, 0.0282725),
+        0px 0.11069px 6.03262px rgba(0, 0, 0, 0.0196802);
+    color: #423f4d;
+`;
+
 function App() {
     const isTabletOrMobile = useMediaQuery({ maxWidth: 1024 });
     const isDesktop = useMediaQuery({ minWidth: 1024 });
@@ -182,7 +208,7 @@ function App() {
                     <Tags>Final Year</Tags>
                 </Nav> */}
                 <LeftSide>
-                    <LeftSideHeroContent>
+                    <LeftSideHeroContent style={{ position: "relative" }}>
                         <SmallTitle>001 // THE PRODUCT</SmallTitle>
                         <MainTitle>
                             A refined{" "}
@@ -191,7 +217,7 @@ function App() {
                             >
                                 diabetes management
                             </span>{" "}
-                            application, for Type 1 diabetics.
+                            application, for Type 1 diabetics.{" "}
                         </MainTitle>
                     </LeftSideHeroContent>
                 </LeftSide>
@@ -341,6 +367,7 @@ function App() {
                             credentials.
                         </MainTitle>
                     </FlowCards>
+
                     <FlowCards whileHover={{ y: -4 }}>
                         <MainTitle
                             style={{ color: "#A7A7A7", fontSize: "1rem" }}
@@ -352,6 +379,7 @@ function App() {
                             results.
                         </MainTitle>
                     </FlowCards>
+
                     <FlowCards whileHover={{ y: -4 }}>
                         <MainTitle
                             style={{ color: "#A7A7A7", fontSize: "1rem" }}
@@ -363,6 +391,7 @@ function App() {
                             updated.
                         </MainTitle>
                     </FlowCards>
+
                     <FlowCards whileHover={{ y: -4 }}>
                         <MainTitle
                             style={{ color: "#A7A7A7", fontSize: "1rem" }}
@@ -374,6 +403,7 @@ function App() {
                             in the app.
                         </MainTitle>
                     </FlowCards>
+
                     <FlowCards whileHover={{ y: -4 }}>
                         <MainTitle
                             style={{ color: "#A7A7A7", fontSize: "1rem" }}
@@ -385,6 +415,7 @@ function App() {
                             in the day.
                         </MainTitle>
                     </FlowCards>
+
                     <FlowCards whileHover={{ y: -4 }}>
                         <MainTitle
                             style={{ color: "#A7A7A7", fontSize: "1rem" }}
